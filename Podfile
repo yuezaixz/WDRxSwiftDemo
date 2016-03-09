@@ -12,7 +12,6 @@ target 'WDRxSwiftDemo' do
     pod 'RxAlamofire'
     pod 'RxDataSources'
     pod 'ObjectMapper'
-    pod 'RxTests',    '~> 2.0'
 
 end
 

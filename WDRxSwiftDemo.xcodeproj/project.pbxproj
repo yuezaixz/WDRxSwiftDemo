@@ -12,7 +12,11 @@
 		A61859741C8DB3C300B093AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A61859721C8DB3C300B093AF /* Main.storyboard */; };
 		A61859761C8DB3C300B093AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A61859751C8DB3C300B093AF /* Assets.xcassets */; };
 		A61859791C8DB3C300B093AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A61859771C8DB3C300B093AF /* LaunchScreen.storyboard */; };
-		ED3DD6112B8A8F08D5BE1E60 /* Pods_WDRxSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F44F52288A014AF34DEE6C /* Pods_WDRxSwiftDemo.framework */; };
+		A6B89E501C8EFB2100F07BFF /* NiuniuCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B89E4F1C8EFB2100F07BFF /* NiuniuCard.swift */; };
+		A6B89E541C8EFB6700F07BFF /* NiuniuCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B89E521C8EFB6700F07BFF /* NiuniuCardCollectionViewCell.swift */; };
+		A6B89E551C8EFB6700F07BFF /* NiuniuCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6B89E531C8EFB6700F07BFF /* NiuniuCardCollectionViewCell.xib */; };
+		A6B89E571C8EFC6200F07BFF /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6B89E561C8EFC6200F07BFF /* Image.xcassets */; };
+		ED3DD6112B8A8F08D5BE1E60 /* Pods_WDRxSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F44F52288A014AF34DEE6C /* Pods_WDRxSwiftDemo.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		A61859751C8DB3C300B093AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A61859781C8DB3C300B093AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A618597A1C8DB3C300B093AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6B89E4F1C8EFB2100F07BFF /* NiuniuCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiuniuCard.swift; sourceTree = "<group>"; };
+		A6B89E521C8EFB6700F07BFF /* NiuniuCardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiuniuCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		A6B89E531C8EFB6700F07BFF /* NiuniuCardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NiuniuCardCollectionViewCell.xib; sourceTree = "<group>"; };
+		A6B89E561C8EFC6200F07BFF /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		CD569F59B730FC9010A33DF9 /* Pods-WDRxSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDRxSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WDRxSwiftDemo/Pods-WDRxSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D4F44F52288A014AF34DEE6C /* Pods_WDRxSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDRxSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -69,14 +77,34 @@
 		A618596D1C8DB3C200B093AF /* WDRxSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A6B89E511C8EFB4600F07BFF /* Views */,
+				A6B89E4E1C8EFAB100F07BFF /* Models */,
 				A618596E1C8DB3C300B093AF /* AppDelegate.swift */,
 				A61859701C8DB3C300B093AF /* ViewController.swift */,
 				A61859721C8DB3C300B093AF /* Main.storyboard */,
 				A61859751C8DB3C300B093AF /* Assets.xcassets */,
 				A61859771C8DB3C300B093AF /* LaunchScreen.storyboard */,
 				A618597A1C8DB3C300B093AF /* Info.plist */,
+				A6B89E561C8EFC6200F07BFF /* Image.xcassets */,
 			);
 			path = WDRxSwiftDemo;
+			sourceTree = "<group>";
+		};
+		A6B89E4E1C8EFAB100F07BFF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A6B89E4F1C8EFB2100F07BFF /* NiuniuCard.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A6B89E511C8EFB4600F07BFF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6B89E521C8EFB6700F07BFF /* NiuniuCardCollectionViewCell.swift */,
+				A6B89E531C8EFB6700F07BFF /* NiuniuCardCollectionViewCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		E11BFEFF3029ED3C7904503F /* Pods */ = {
@@ -149,7 +177,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6B89E551C8EFB6700F07BFF /* NiuniuCardCollectionViewCell.xib in Resources */,
 				A61859791C8DB3C300B093AF /* LaunchScreen.storyboard in Resources */,
+				A6B89E571C8EFC6200F07BFF /* Image.xcassets in Resources */,
 				A61859761C8DB3C300B093AF /* Assets.xcassets in Resources */,
 				A61859741C8DB3C300B093AF /* Main.storyboard in Resources */,
 			);
@@ -210,7 +240,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6B89E501C8EFB2100F07BFF /* NiuniuCard.swift in Sources */,
 				A61859711C8DB3C300B093AF /* ViewController.swift in Sources */,
+				A6B89E541C8EFB6700F07BFF /* NiuniuCardCollectionViewCell.swift in Sources */,
 				A618596F1C8DB3C300B093AF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

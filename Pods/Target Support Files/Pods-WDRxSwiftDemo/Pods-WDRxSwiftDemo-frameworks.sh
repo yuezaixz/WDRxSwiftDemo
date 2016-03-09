@@ -91,7 +91,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-WDRxSwiftDemo/RxCocoa.framework"
   install_framework "Pods-WDRxSwiftDemo/RxDataSources.framework"
   install_framework "Pods-WDRxSwiftDemo/RxSwift.framework"
-  install_framework "Pods-WDRxSwiftDemo/RxTests.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-WDRxSwiftDemo/Alamofire.framework"
@@ -101,5 +100,4 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-WDRxSwiftDemo/RxCocoa.framework"
   install_framework "Pods-WDRxSwiftDemo/RxDataSources.framework"
   install_framework "Pods-WDRxSwiftDemo/RxSwift.framework"
-  install_framework "Pods-WDRxSwiftDemo/RxTests.framework"
 fi
